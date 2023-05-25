@@ -1,0 +1,16 @@
+//utils
+@import './utils/variables.scss';
+
+// common
+@import './common/common.scss';
+
+// pages
+@import './pages/home.scss';
+
+// components
+@import './components/notification.scss';
+@import './components/settings.scss';
+@import './components/switcher.scss';
+@import './components/counter.scss';
+@import './components/button.scss';
+@import './components/timer.scss';

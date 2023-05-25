@@ -1,0 +1,24 @@
+.home {
+  background-color: var(--red);
+  min-height: 100vh;
+
+  &.shortBreak {
+    background-color: var(--green);
+  }
+
+  &.longBreak {
+    background-color: var(--blue);
+  }
+
+  &-content {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-top: 169px;
+    padding-top: 169px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

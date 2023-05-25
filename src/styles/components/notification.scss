@@ -1,0 +1,51 @@
+.notification {
+  display: inline-flex;
+  padding: 11px 16px;
+  gap: 8px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+
+  &-description {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+
+  &.focus {
+    background-color: $background-light-red;
+    border: 2px solid var(--border-red);
+    color: var(--border-red);
+
+    svg {
+      path {
+        fill: var(--border-red);
+      }
+    }
+  }
+
+  &.shortBreak {
+    background-color: $background-light-green;
+    border: 2px solid var(--border-green);
+    color: var(--border-green);
+
+    svg {
+      path {
+        fill: var(--border-green);
+      }
+    }
+  }
+
+  &.longBreak {
+    background-color: $background-light-blue;
+    border: 2px solid var(--border-blue);
+    color: var(--border-blue);
+
+    svg {
+      path {
+        fill: var(--border-blue);
+      }
+    }
+  }
+}

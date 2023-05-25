@@ -1,0 +1,96 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &-content {
+    font-weight: 200;
+    font-size: 256px;
+    line-height: 218px;
+    text-align: center;
+
+    &.active {
+      font-weight: 800;
+    }
+  }
+
+  &-buttons-container {
+    width: 320px;
+    height: 96px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &.focus {
+    .timer {
+      &-content {
+        color: var(--text-red);
+      }
+
+      &-buttons-container {
+        .small {
+          background-color: $background-light-red;
+        }
+
+        .medium {
+          background-color: $background-dark-red;
+        }
+
+        svg {
+          path {
+            fill: var(--border-red);
+          }
+        }
+      }
+    }
+  }
+  
+  &.shortBreak {
+    .timer {
+      &-content {
+        color: var(--text-green);
+      }
+
+      &-buttons-container {
+        .small {
+          background-color: $background-light-green;
+        }
+
+        .medium {
+          background-color: $background-dark-green;
+        }
+
+        svg {
+          path {
+            fill: var(--border-green);
+          }
+        }
+      }
+    }
+  }
+  &.longBreak {
+    .timer {
+      &-content {
+        color: var(--text-blue);
+      }
+
+      &-buttons-container {
+        .small {
+          background-color: $background-light-blue;
+        }
+
+        .medium {
+          background-color: $background-dark-blue;
+        }
+        
+        svg {
+          path {
+            fill: var(--border-blue);
+          }
+        }
+      }
+    }
+  }
+
+}

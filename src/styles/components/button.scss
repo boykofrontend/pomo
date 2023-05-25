@@ -1,0 +1,22 @@
+.custom-btn {
+  width: 100%;
+  border: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.small {
+    width: 80px;
+    height: 80px;
+    border-radius: 24px;
+    background: $background-light-red;
+  }
+
+  &.medium {
+    width: 128px;
+    height: 96px;
+    border-radius: 32px;
+    background: $background-dark-red;
+  }
+}
